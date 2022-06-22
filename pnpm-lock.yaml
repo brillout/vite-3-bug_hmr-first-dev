@@ -1,24 +1,24 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@vitejs/plugin-react': ^1.3.2
+  '@vitejs/plugin-react': 2.0.0-beta.0
   compression: ^1.7.4
   cross-env: ^7.0.3
   express: ^4.18.1
   react: ^18.1.0
   react-dom: ^18.1.0
-  vite: ^2.9.7
+  vite: 3.0.0-beta.0
   vite-plugin-ssr: 0.4.0-beta.38
 
 dependencies:
-  '@vitejs/plugin-react': 1.3.2
+  '@vitejs/plugin-react': 2.0.0-beta.0_vite@3.0.0-beta.0
   compression: 1.7.4
   cross-env: 7.0.3
   express: 4.18.1
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
-  vite: 2.9.12
-  vite-plugin-ssr: 0.4.0-beta.38_vite@2.9.12
+  vite: 3.0.0-beta.0
+  vite-plugin-ssr: 0.4.0-beta.38_vite@3.0.0-beta.0
 
 packages:
 
@@ -350,26 +350,19 @@ packages:
       fastq: 1.13.0
     dev: false
 
-  /@rollup/pluginutils/4.2.1:
-    resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
-    engines: {node: '>= 8.0.0'}
-    dependencies:
-      estree-walker: 2.0.2
-      picomatch: 2.3.1
-    dev: false
-
-  /@vitejs/plugin-react/1.3.2:
-    resolution: {integrity: sha512-aurBNmMo0kz1O4qRoY+FM4epSA39y3ShWGuqfLRA/3z0oEJAdtoSfgA3aO98/PCCHAqMaduLxIxErWrVKIFzXA==}
-    engines: {node: '>=12.0.0'}
+  /@vitejs/plugin-react/2.0.0-beta.0_vite@3.0.0-beta.0:
+    resolution: {integrity: sha512-Tx6shZAW/1n89IJ56gejZuBSJZ80ap+ErNKFGKFh7NbHxJeZOmt/+uRRn7edvaJ1e2R/eo3NbF0alxCbqm9XVg==}
+    engines: {node: '>=14.18.0'}
+    peerDependencies:
+      vite: ^3.0.0-alpha.11
     dependencies:
       '@babel/core': 7.18.5
       '@babel/plugin-transform-react-jsx': 7.17.12_@babel+core@7.18.5
       '@babel/plugin-transform-react-jsx-development': 7.16.7_@babel+core@7.18.5
       '@babel/plugin-transform-react-jsx-self': 7.17.12_@babel+core@7.18.5
       '@babel/plugin-transform-react-jsx-source': 7.16.7_@babel+core@7.18.5
-      '@rollup/pluginutils': 4.2.1
-      react-refresh: 0.13.0
-      resolve: 1.22.1
+      react-refresh: 0.14.0
+      vite: 3.0.0-beta.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -849,10 +842,6 @@ packages:
     engines: {node: '>=0.8.0'}
     dev: false
 
-  /estree-walker/2.0.2:
-    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
-    dev: false
-
   /etag/1.8.1:
     resolution: {integrity: sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==}
     engines: {node: '>= 0.6'}
@@ -1307,8 +1296,8 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-refresh/0.13.0:
-    resolution: {integrity: sha512-XP8A9BT0CpRBD+NYLLeIhld/RqG9+gktUjW1FkE+Vm7OCinbG1SshcK5tb9ls4kzvjZr9mOQc7HYgBngEyPAXg==}
+  /react-refresh/0.14.0:
+    resolution: {integrity: sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==}
     engines: {node: '>=0.10.0'}
     dev: false
 
@@ -1545,7 +1534,7 @@ packages:
       ufo: 0.8.4
     dev: false
 
-  /vite-plugin-ssr/0.4.0-beta.38_vite@2.9.12:
+  /vite-plugin-ssr/0.4.0-beta.38_vite@3.0.0-beta.0:
     resolution: {integrity: sha512-Emp1miliEGHxRoYRerVlrjjTgh95a2alF/S67hBSDXAy/RWAOp36CQGli13Wp41xpAI/pt1sQ0DL4Mh1Pe+cug==}
     engines: {node: '>=12.19.0'}
     hasBin: true
@@ -1562,27 +1551,30 @@ packages:
       picocolors: 1.0.0
       resolve: 1.22.1
       symlink-dir: 5.0.1
-      vite: 2.9.12
+      vite: 3.0.0-beta.0
       vite-plugin-dist-importer: 0.3.1
       vite-plugin-glob: 0.2.8
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /vite/2.9.12:
-    resolution: {integrity: sha512-suxC36dQo9Rq1qMB2qiRorNJtJAdxguu5TMvBHOc/F370KvqAe9t48vYp+/TbPKRNrMh/J55tOUmkuIqstZaew==}
-    engines: {node: '>=12.2.0'}
+  /vite/3.0.0-beta.0:
+    resolution: {integrity: sha512-GxQasmIQw3TplbchtSGijvPNlkciZ+QT+KQFk+07VsLNdf95G20VeFYkJpF2cTGtmG2cYYzvn2QU8XDGWZvcXQ==}
+    engines: {node: '>=14.18.0'}
     hasBin: true
     peerDependencies:
       less: '*'
       sass: '*'
       stylus: '*'
+      terser: ^5.4.0
     peerDependenciesMeta:
       less:
         optional: true
       sass:
         optional: true
       stylus:
+        optional: true
+      terser:
         optional: true
     dependencies:
       esbuild: 0.14.47
